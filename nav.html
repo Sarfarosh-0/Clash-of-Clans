@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash of Clans</title>
+    <link href="https://img.icons8.com/ios-filled/50/clash-of-clans-barbarian-king.png" rel="website icon"
+        type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        a {
+            transition: all 0.5s ease-in-out;
+        }
+
+        .menu:has(a:hover) a:not(:hover) {
+            opacity: 0.3;
+            filter: blur(1px);
+        }
+
+        .menu:has(a:hover) {
+            transform: scale(1.02);
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="sticky top-0 flex items-center justify-between bg-black px-4 py-2 font-bold">
+        <img src="resoucres/logo2-removebg-preview.png" class="w-36" alt="Logo">
+
+        <ul class="hidden md:flex items-center gap-10 text-white text-lg menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Troops</a></li>
+            <li><a href="#">Download</a></li>
+        </ul>
+
+        <button class="hidden md:block bg-amber-400 px-4 py-2 rounded-lg hover:scale-110 transition">
+            Play Now
+        </button>
+
+        <button class="md:hidden text-white text-3xl hover:scale-110 transition">
+            ☰
+        </button>
+
+    </nav>
+</body>
+
+</html>
