@@ -7,7 +7,7 @@
     <title>Clash of Clans</title>
     <link href="https://img.icons8.com/ios-filled/50/clash-of-clans-barbarian-king.png" rel="website icon"
         type="image/png">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./output.css" rel="stylesheet">
 
     <style>
         a {
@@ -27,8 +27,8 @@
 </head>
 
 <body>
-    <nav class="sticky top-0 flex items-center justify-between bg-black px-4 py-2 font-bold">
-        <img src="resoucres/logo2-removebg-preview.png" class="w-36" alt="Logo">
+    <nav class="sticky top-0 flex items-center justify-between bg-black px-4 font-bold">
+        <img src="resources/logo2-removebg-preview.png" class="w-36" alt="Logo">
 
         <ul class="hidden md:flex items-center gap-10 text-white text-lg menu">
             <li><a href="#">Home</a></li>
@@ -37,7 +37,7 @@
             <li><a href="#">Download</a></li>
         </ul>
 
-        <button class="hidden md:block bg-amber-400 px-4 py-2 rounded-lg hover:scale-110 transition">
+        <button class="hidden md:block bg-amber-400 px-4 py-2 rounded-lg hover:scale-110 transition active:scale-90">
             Play Now
         </button>
 
@@ -46,6 +46,34 @@
         </button>
 
     </nav>
+
+    <main>
+        <section class="relative w-full h-[600px] md:h-[450px] overflow-hidden">
+
+            <img src="resources/heroSection.png" class="absolute inset-0 w-full h-full object-cover hidden md:block">
+            <img src="resources/mobileHeroSection.png" class="absolute inset-0 w-full h-full object-cover md:hidden">
+
+            <div
+                class="relative z-10 flex flex-col justify-center items-center md:items-start h-full px-6 md:px-16 max-w-xl text-center md:text-left">
+                <img src="resources/Build.png" alt="Build Your Empire" class="w-64 md:w-150">
+                <p class="mt-4 text-base md:text-xl text-black font-semibold max-w-sm md:max-w-md">
+                    Train powerful troops, join epic clan wars, and conquer your enemies.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-3 mt-8 w-fit sm:w-auto">
+                    <button
+                        class="bg-yellow-400 hover:bg-yellow-500 px-8 py-3 rounded-lg font-semibold transition hover:scale-105 active:scale-95">
+                        Play Now
+                    </button>
+                    <button
+                        class="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition hover:scale-105 active:scale-95">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
 </body>
 
 </html>
