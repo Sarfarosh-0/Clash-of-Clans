@@ -2,6 +2,8 @@
 
 A responsive **Clash of Clans** themed landing page built using **HTML5** and **Tailwind CSS**. The project features a modern UI with sections for game features, heroes, troops, game statistics, and a download call-to-action.
 
+## Live Link : https://sarfarosh-0.github.io/Clash-of-Clans/
+
 ##  Features
 
 * Responsive design
