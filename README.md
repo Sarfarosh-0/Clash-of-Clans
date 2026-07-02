@@ -2,7 +2,7 @@
 
 A responsive **Clash of Clans** themed landing page built using **HTML5** and **Tailwind CSS**. The project features a modern UI with sections for game features, heroes, troops, game statistics, and a download call-to-action.
 
-## 🚀 Features
+##  Features
 
 * Responsive design
 * Modern UI with Tailwind CSS
@@ -11,7 +11,7 @@ A responsive **Clash of Clans** themed landing page built using **HTML5** and **
 * Download section
 * Smooth hover animations
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * HTML5
 * Tailwind CSS
@@ -27,11 +27,6 @@ A responsive **Clash of Clans** themed landing page built using **HTML5** and **
 
 2. Open `index.html` in your browser.
 
-## 📸 Preview
-
-![HomePage](resources/clash-of-clans.png)
-
-
-## 📄 License
+## License
 
 This project is for **educational and portfolio purposes only**. Clash of Clans and its assets belong to **Supercell**.
