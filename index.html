@@ -37,21 +37,32 @@
 
     <header class="sticky top-0 z-50">
         <!-- NAVIGATION BAR -->
-        <nav class="flex items-center justify-between bg-black px-4 py-2 font-bold">
+        <nav class="flex items-center justify-between bg-black px-4 py-2 font-bold relative">
             <img src="resources/logo.png" class="w-36" alt="Logo" draggable="false">
+
             <ul class="hidden md:flex items-center gap-10 text-white text-lg menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#troops">Troops</a></li>
                 <li><a href="#download">Download</a></li>
             </ul>
+
             <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=en_IN" target="_blank"
                 class="hidden md:inline-block bg-amber-400 px-4 py-2 text-black rounded-lg hover:scale-110 transition active:scale-90 text-center">
                 Play Now
             </a>
-            <button class="md:hidden text-white text-3xl hover:scale-110 transition">
+
+            <button id="menuBtn" class="md:hidden text-white text-3xl hover:scale-110 transition focus:outline-none">
                 ☰
             </button>
+
+            <ul id="mobileMenu"
+                class="absolute top-full left-0 w-full rounded-b-2xl bg-black flex flex-col items-center gap-4 py-6 text-white text-lg border-t border-gray-800 md:hidden shadow-xl origin-top transform opacity-0 scale-95 pointer-events-none transition-all duration-300 ease-in-out">
+                <li><a href="index.html" class="hover:text-amber-400 transition-colors">Home</a></li>
+                <li><a href="#features" class="hover:text-amber-400 transition-colors">Features</a></li>
+                <li><a href="#troops" class="hover:text-amber-400 transition-colors">Troops</a></li>
+                <li><a href="#download" class="hover:text-amber-400 transition-colors">Download</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -368,10 +379,11 @@
         <section id="download"
             class="max-w-6xl mx-auto my-16 h-auto md:h-56 bg-gradient-to-r from-[#ffc800] to-[#f39c12] rounded-3xl flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-8 md:py-0 shadow-lg relative">
 
-            <img class="relative w-full md:w-2/5 flex justify-center md:block h-48 md:h-full">
-            <img src="resources/Download-King.png" alt="Barbarian King"
-                class="absolute bottom-0 left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 h-56 md:h-64 max-w-none object-contain z-10 drop-shadow-[0_10px_15px_rgba(0,0,0,0.15)]"
-                draggable="false" />
+            <!-- Corrected wrapper div to handle the absolute positioning safely on mobile -->
+            <div class="relative w-full md:w-2/5 flex justify-center md:block h-48 md:h-full">
+                <img src="resources/Download-King.png" alt="Barbarian King"
+                    class="absolute bottom-0 left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 h-56 md:h-64 max-w-none object-contain z-10 drop-shadow-[0_10px_15px_rgba(0,0,0,0.15)]"
+                    draggable="false" />
             </div>
 
             <div class="w-full md:w-3/5 flex flex-col items-center justify-center text-center gap-3 mt-6 md:mt-0 z-20">
@@ -452,6 +464,31 @@
 
     </footer>
 
+</body>
+
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('opacity-0');
+        mobileMenu.classList.toggle('opacity-100');
+
+        mobileMenu.classList.toggle('scale-95');
+        mobileMenu.classList.toggle('scale-100');
+
+        mobileMenu.classList.toggle('pointer-events-none');
+    });
+
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+            mobileMenu.classList.remove('opacity-100', 'scale-100');
+        });
+    });
+</script>
+</body>
 </body>
 
 </html>
