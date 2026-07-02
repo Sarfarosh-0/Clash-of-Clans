@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clash of Clans</title>
     <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/clash-of-clans-barbarian-king.png">
-    <link href="./output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
@@ -36,12 +35,12 @@
 
 <body class="bg-[#f9f8f5] select-none ">
     <nav class="sticky top-0 flex items-center justify-between bg-black px-4 font-bold z-50">
-        <img src="resources/logo2-removebg-preview.png" class="w-36" alt="Logo">
+        <img src="resources/logo.png" class="w-36" alt="Logo">
 
         <ul class="hidden md:flex items-center gap-10 text-white text-lg menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Troops</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#troops">Troops</a></li>
             <li><a href="#">Download</a></li>
         </ul>
 
@@ -56,7 +55,9 @@
     </nav>
 
     <main>
-        <section class="relative w-full h-[600px] md:h-[450px] overflow-hidden">
+
+        <!-- Hero Section -->
+        <section id="heroSection" class="relative w-full h-[600px] md:h-[450px] overflow-hidden">
 
             <img src="resources/heroSection.png" class="absolute inset-0 w-full h-full object-cover hidden md:block">
             <img src="resources/mobileHeroSection.png" class="absolute inset-0 w-full h-full object-cover md:hidden">
@@ -81,11 +82,12 @@
         </section>
 
         <!-- Features Section -->
-        <section id="features" class="flex flex-col items-center py-6 gap-8 font-bold">
+        <section id="features" class="flex flex-col items-center py-6 gap-8">
 
             <div class="flex items-center justify-center gap-4 ">
                 <div class="h-[3px] w-20 bg-[#f1c40f] rounded"></div>
-                <h2 class="text-3xl md:text-4xl text-black font-bold">Game Features</h2>
+                <h2 class="text-3xl md:text-4xl text-black font-bold"
+                    style="font-family: 'Impact', 'Arial Black', sans-serif;">Game Features</h2>
                 <div class="h-[3px] w-20 bg-[#f1c40f] rounded"></div>
             </div>
 
@@ -93,26 +95,116 @@
                 <div
                     class="w-full max-w-[300px] rounded-2xl bg-white shadow-2xl p-8 flex flex-col items-center text-center gap-4 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <img src="resources/village.png" alt="Build your Village" class="object-contain">
-                    <h2 class="text-3xl font-bold text-black">BUILD</h2>
+                    <h2 class="text-3xl font-bold text-black" style="font-family: 'Impact', 'Arial Black', sans-serif;">
+                        BUILD</h2>
                     <p class="text-gray-600 font-semibold">Construct your village, upgrade your defenses, and build
                         strong walls.</p>
                 </div>
                 <div
                     class="w-full max-w-[300px] rounded-2xl bg-white shadow-2xl p-8 flex flex-col items-center text-center gap-4 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <img src="resources/battel.png" alt="Battle" class="object-contain">
-                    <h2 class="text-3xl font-bold text-black">BATTLE</h2>
+                    <h2 class="text-3xl font-bold text-black" style="font-family: 'Impact', 'Arial Black', sans-serif;">
+                        BATTLE</h2>
                     <p class="text-gray-600  font-semibold ">Attack other players, win resources, and climb the
                         leaderboard</p>
                 </div>
                 <div
                     class="w-full max-w-[300px] rounded-2xl bg-white shadow-2xl p-8 flex flex-col items-center text-center gap-4 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <img src="resources/clans.png" alt="Join epic Clans" class="object-contain">
-                    <h2 class="text-3xl font-bold text-black">CLANS</h2>
+                    <h2 class="text-3xl font-bold text-black" style="font-family: 'Impact', 'Arial Black', sans-serif;">
+                        CLANS</h2>
                     <p class="text-gray-600  font-semibold ">Join or create a clan, fight in clan wars, and make lasting
                         friendships.</p>
                 </div>
             </div>
         </section>
+
+        <!-- Troops Section -->
+        <section id="troops" class="flex flex-col items-center py-8 px-4">
+
+            <div class="flex items-center justify-center gap-4 mb-8">
+                <div class="h-[3px] w-16 bg-[#f1c40f] rounded"></div>
+                <h2 class="text-3xl md:text-4xl font-black text-[#1a1a1a]"
+                    style="font-family: 'Impact', 'Arial Black', sans-serif;">
+                    POPULAR TROOPS
+                </h2>
+                <div class="h-[3px] w-16 bg-[#f1c40f] rounded"></div>
+            </div>
+
+            <div class="flex justify-center gap-6 flex-wrap w-full max-w-6xl">
+
+                <!-- Card 1: BARBARIAN -->
+                <div
+                    class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <div class="w-full h-44 bg-gray-100 overflow-hidden">
+                        <img src="resources/barbarian.png" alt="Barbarian Troop" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-3 flex flex-col items-center text-center">
+                        <h3 class="text-lg font-black text-[#1a1a1a] tracking-wide mb-1"
+                            style="font-family: 'Impact', 'Arial Black', sans-serif;">
+                            BARBARIAN
+                        </h3>
+                        <p class="text-gray-600 font-semibold text-xs leading-snug">
+                            A strong melee fighter with a sword.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: ARCHER -->
+                <div
+                    class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <div class="w-full h-44 bg-gray-100 overflow-hidden">
+                        <img src="resources/archer.png" alt="Archer Troop" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-3 flex flex-col items-center text-center">
+                        <h3 class="text-lg font-black text-[#1a1a1a] tracking-wide mb-1"
+                            style="font-family: 'Impact', 'Arial Black', sans-serif;">
+                            ARCHER
+                        </h3>
+                        <p class="text-gray-600 font-semibold text-xs leading-snug">
+                            A ranged attacker that shoots arrows.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3: WIZARD -->
+                <div
+                    class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <div class="w-full h-44 bg-gray-100 overflow-hidden">
+                        <img src="resources/wizard.png" alt="Wizard Troop" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-3 flex flex-col items-center text-center">
+                        <h3 class="text-lg font-black text-[#1a1a1a] tracking-wide mb-1"
+                            style="font-family: 'Impact', 'Arial Black', sans-serif;">
+                            WIZARD
+                        </h3>
+                        <p class="text-gray-600 font-semibold text-xs leading-snug">
+                            A magic attacker that deals area damage.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4: DRAGON -->
+                <div
+                    class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <div class="w-full h-44 bg-gray-100 overflow-hidden">
+                        <img src="resources/dragon.png" alt="Dragon Troop" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-3 flex flex-col items-center text-center">
+                        <h3 class="text-lg font-black text-[#1a1a1a] tracking-wide mb-1"
+                            style="font-family: 'Impact', 'Arial Black', sans-serif;">
+                            DRAGON
+                        </h3>
+                        <p class="text-gray-600 font-semibold text-xs leading-snug">
+                            A powerful flying unit with high damage.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
     </main>
 </body>
 
