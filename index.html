@@ -33,29 +33,27 @@
     </style>
 </head>
 
-<body class="bg-[#f9f8f5] select-none ">
+<body class="bg-[#f9f8f5] select-none">
 
-    <Header class="sticky top-0 z-50">
+    <header class="sticky top-0 z-50">
         <!-- NAVIGATION BAR -->
-        <nav class="flex items-center justify-between bg-black px-4 font-bold">
+        <nav class="flex items-center justify-between bg-black px-4 py-2 font-bold">
             <img src="resources/logo.png" class="w-36" alt="Logo">
             <ul class="hidden md:flex items-center gap-10 text-white text-lg menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#troops">Troops</a></li>
-                <li><a href="#download">Download</a>
-                </li>
+                <li><a href="#download">Download</a></li>
             </ul>
-            <button
-                class="hidden md:block bg-amber-400 px-4 py-2 rounded-lg hover:scale-110 transition active:scale-90">
-                <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=en_IN"
-                    target="_blank">Play Now</a>
-            </button>
+            <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=en_IN" target="_blank"
+                class="hidden md:inline-block bg-amber-400 px-4 py-2 text-black rounded-lg hover:scale-110 transition active:scale-90 text-center">
+                Play Now
+            </a>
             <button class="md:hidden text-white text-3xl hover:scale-110 transition">
                 ☰
             </button>
         </nav>
-    </Header>
+    </header>
 
     <main>
 
@@ -73,38 +71,38 @@
                 <p class="mt-4 text-base md:text-xl text-black font-semibold max-w-sm md:max-w-md">
                     Train powerful troops, join epic clan wars, and conquer your enemies.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-3 mt-8 w-fit sm:w-auto">
-                    <button
-                        class="bg-yellow-400 hover:bg-yellow-500 px-8 py-3 rounded-lg font-semibold transition hover:scale-105 active:scale-95">
-                        <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=en_IN"
-                            target="_blank">Play Now</a>
-                    </button>
-                    <button
-                        class="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition hover:scale-105 active:scale-95">
-                        <a href="https://supercell.com/en/games/clashofclans/" target="_blank">Learn More</a>
-                    </button>
+                <div class="flex flex-col sm:flex-row gap-3 mt-8 w-full sm:w-auto">
+                    <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=en_IN"
+                        target="_blank"
+                        class="bg-yellow-400 hover:bg-yellow-500 text-black text-center px-8 py-3 rounded-lg font-semibold transition hover:scale-105 active:scale-95">
+                        Play Now
+                    </a>
+                    <a href="https://supercell.com/en/games/clashofclans/" target="_blank"
+                        class="bg-white hover:bg-gray-100 text-black text-center px-8 py-3 rounded-lg font-semibold transition hover:scale-105 active:scale-95 border border-gray-200">
+                        Learn More
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- Features Section -->
-        <section id="features" class="flex flex-col items-center py-6 gap-8">
+        <section id="features" class="flex flex-col items-center py-12 gap-8">
 
-            <div class="flex items-center justify-center gap-4 ">
+            <div class="flex items-center justify-center gap-4">
                 <div class="h-[3px] w-20 bg-[#f1c40f] rounded"></div>
                 <h2 class="text-2xl md:text-4xl text-black font-bold"
                     style="font-family: 'Impact', 'Arial Black', sans-serif;">Game Features</h2>
                 <div class="h-[3px] w-20 bg-[#f1c40f] rounded"></div>
             </div>
 
-            <div class=" flex justify-center gap-10 flex-wrap">
+            <div class="flex justify-center gap-10 flex-wrap px-4">
 
                 <!-- BUILD YOUR VILLAGE -->
                 <div
                     class="w-full max-w-[300px] rounded-2xl bg-white shadow-2xl p-8 flex flex-col items-center text-center gap-4 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <img src="resources/Village.png" alt="Build your Village" class="object-contain">
-                    <h2 class="text-3xl font-bold text-black" style="font-family: 'Impact', 'Arial Black', sans-serif;">
-                        BUILD</h2>
+                    <h3 class="text-3xl font-bold text-black" style="font-family: 'Impact', 'Arial Black', sans-serif;">
+                        BUILD</h3>
                     <p class="text-gray-600 font-semibold">Construct your village, upgrade your defenses, and build
                         strong walls.</p>
                 </div>
@@ -112,25 +110,25 @@
                 <div
                     class="w-full max-w-[300px] rounded-2xl bg-white shadow-2xl p-8 flex flex-col items-center text-center gap-4 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <img src="resources/Battel.png" alt="Battle" class="object-contain">
-                    <h2 class="text-3xl font-bold text-black" style="font-family: 'Impact', 'Arial Black', sans-serif;">
-                        BATTLE</h2>
-                    <p class="text-gray-600  font-semibold ">Attack other players, win resources, and climb the
+                    <h3 class="text-3xl font-bold text-black" style="font-family: 'Impact', 'Arial Black', sans-serif;">
+                        BATTLE</h3>
+                    <p class="text-gray-600 font-semibold">Attack other players, win resources, and climb the
                         leaderboard</p>
                 </div>
                 <!-- JOIN EPIC CLANS -->
                 <div
                     class="w-full max-w-[300px] rounded-2xl bg-white shadow-2xl p-8 flex flex-col items-center text-center gap-4 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <img src="resources/Clans.png" alt="Join epic Clans" class="object-contain">
-                    <h2 class="text-3xl font-bold text-black" style="font-family: 'Impact', 'Arial Black', sans-serif;">
-                        CLANS</h2>
-                    <p class="text-gray-600  font-semibold ">Join or create a clan, fight in clan wars, and make lasting
+                    <h3 class="text-3xl font-bold text-black" style="font-family: 'Impact', 'Arial Black', sans-serif;">
+                        CLANS</h3>
+                    <p class="text-gray-600 font-semibold">Join or create a clan, fight in clan wars, and make lasting
                         friendships.</p>
                 </div>
             </div>
         </section>
 
         <!-- Heroes Section -->
-        <section id="Heroes-Section" class="flex flex-col items-center py-8 px-4 bg-[#f9f8f5]">
+        <section id="Heroes-Section" class="flex flex-col items-center py-12 px-4 bg-[#f9f8f5]">
 
             <div class="flex items-center justify-center gap-4 mb-8">
                 <div class="h-[3px] w-16 bg-[#f1c40f] rounded"></div>
@@ -146,7 +144,7 @@
                 <!-- Hero 1: BARBARIAN KING -->
                 <div
                     class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-                    <div class="w-full h-45 bg-amber-50 overflow-hidden">
+                    <div class="w-full h-48 bg-amber-50 overflow-hidden">
                         <img src="resources/Barbarian King.png" alt="Barbarian King Hero"
                             class="w-full h-full object-cover">
                     </div>
@@ -164,7 +162,7 @@
                 <!-- Hero 2: ARCHER QUEEN -->
                 <div
                     class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-                    <div class="w-full h-45 bg-amber-50 overflow-hidden">
+                    <div class="w-full h-48 bg-amber-50 overflow-hidden">
                         <img src="resources/Archer-Queen.png" alt="Archer Queen Hero"
                             class="w-full h-full object-cover">
                     </div>
@@ -182,7 +180,7 @@
                 <!-- Hero 3: GRAND WARDEN -->
                 <div
                     class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-                    <div class="w-full h-45 bg-amber-50 overflow-hidden">
+                    <div class="w-full h-48 bg-amber-50 overflow-hidden">
                         <img src="resources/Grand-Warden.png" alt="Grand Warden Hero"
                             class="w-full h-full object-cover">
                     </div>
@@ -200,7 +198,7 @@
                 <!-- Hero 4: ROYAL CHAMPION -->
                 <div
                     class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-                    <div class="w-full h-45 bg-amber-50 overflow-hidden">
+                    <div class="w-full h-48 bg-amber-50 overflow-hidden">
                         <img src="resources/Royal-Champaion.png" alt="Royal Champion Hero"
                             class="w-full h-full object-cover">
                     </div>
@@ -218,7 +216,7 @@
         </section>
 
         <!-- Troops Section -->
-        <section id="troops" class="flex flex-col items-center py-8 px-4">
+        <section id="troops" class="flex flex-col items-center py-12 px-4">
 
             <div class="flex items-center justify-center gap-4 mb-8">
                 <div class="h-[3px] w-16 bg-[#f1c40f] rounded"></div>
@@ -304,7 +302,7 @@
 
         <!-- Game Details Section -->
         <section id="Details"
-            class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between py-6 px-10 my-8 mx-6 rounded-2xl bg-[#f2f1ed] text-[#1a1a1a] gap-6 md:gap-0">
+            class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between py-6 px-10 my-8 bg-[#f2f1ed] text-[#1a1a1a] gap-6 md:gap-0 rounded-2xl">
 
             <!-- Stat 1: PLAYERS -->
             <div class="flex items-center gap-4 w-full md:w-auto justify-center md:justify-start">
@@ -345,7 +343,7 @@
             <!-- Stat 3: COUNTRIES -->
             <div class="flex items-center gap-4 w-full md:w-auto justify-center md:justify-start">
                 <div class="w-16 h-14 overflow-hidden flex items-center justify-center">
-                    <img src="resources/Total-Countries.png" alt="Countires Icon" />
+                    <img src="resources/Total-Countries.png" alt="Countries Icon" />
                 </div>
                 <div class="flex flex-col text-left">
                     <span class="text-2xl md:text-3xl font-black tracking-tight leading-none"
@@ -362,7 +360,7 @@
 
         <!-- Download Section -->
         <section id="download"
-            class=" max-w-6xl mx-auto my-16 h-auto md:h-56 bg-gradient-to-r from-[#ffc800] to-[#f39c12] rounded-3xl flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-8 md:py-0 shadow-lg">
+            class="max-w-6xl mx-auto my-16 h-auto md:h-56 bg-gradient-to-r from-[#ffc800] to-[#f39c12] rounded-3xl flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-8 md:py-0 shadow-lg relative">
 
             <div class="relative w-full md:w-2/5 flex justify-center md:block h-48 md:h-full">
                 <img src="resources/King.png" alt="Barbarian King"
@@ -379,13 +377,73 @@
                 </p>
                 <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=en_IN"
                     target="_blank"
-                    class="mt-2 bg-[#11141a] text-white px-8 py-3 rounded-xl font-bold text-sm tracking-wide transition-all duration-200 shadow-md hover:bg-black hover:scale-105 active:scale-95">
+                    class="mt-2 bg-[#11141a] text-white px-8 py-3 rounded-xl font-bold text-sm tracking-wide transition-all duration-200 shadow-md hover:bg-black hover:scale-105 active:scale-95 text-center">
                     Download Now
                 </a>
-
             </div>
         </section>
     </main>
+
+    <!-- Footer Section -->
+    <footer class="w-full bg-[#0d1117] text-white py-6 px-6 md:px-12 flex flex-col items-center">
+
+        <div class="max-w-5xl w-full flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
+            <div class="flex items-center justify-center">
+                <div class="w-36 h-12 flex items-center justify-center md:justify-start">
+                    <img src="resources/logo.png" alt="Clash of Clans Logo" class="w-full h-auto object-contain" />
+                </div>
+            </div>
+            <div class="flex gap-12 md:gap-16 text-center md:text-left items-center">
+                <div class="flex flex-col gap-1.5">
+                    <a href="index.html"
+                        class="font-semibold text-gray-300 hover:text-[#f1c40f] transition duration-200 text-xs md:text-sm">Home</a>
+                    <a href="#features"
+                        class="font-semibold text-gray-300 hover:text-[#f1c40f] transition duration-200 text-xs md:text-sm">Features</a>
+                    <a href="#troops"
+                        class="font-semibold text-gray-300 hover:text-[#f1c40f] transition duration-200 text-xs md:text-sm">Troops</a>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                    <a href="#support"
+                        class="font-semibold text-gray-200 hover:text-[#f1c40f] transition duration-200 text-xs md:text-sm">Support</a>
+                    <a href="#privacy"
+                        class="font-semibold text-gray-200 hover:text-[#f1c40f] transition duration-200 text-xs md:text-sm">Privacy
+                        Policy</a>
+                    <a href="#terms"
+                        class="font-semibold text-gray-200 hover:text-[#f1c40f] transition duration-200 text-xs md:text-sm">Terms
+                        of Service</a>
+                </div>
+            </div>
+            <div class="flex items-center justify-center gap-3">
+                <!-- LinkedIn -->
+                <a href="http://www.linkedin.com/in/sarfarosh-xxi" target="_blank"
+                    class="w-8 h-8 rounded-full bg-white flex items-center justify-center p-1.5 shadow-md">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1384/1384046.png" alt="LinkedIn"
+                        class="w-full h-full object-contain">
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/sarfarosh_0/" target="_blank"
+                    class="w-8 h-8 rounded-full bg-white flex items-center justify-center p-1.5 shadow-md">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1400/1400829.png" alt="Instagram"
+                        class="w-full h-full object-contain">
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/Sarfarosh-0" target="_blank"
+                    class="w-8 h-8 rounded-full bg-white flex items-center justify-center p-1.5 shadow-md">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968866.png" alt="GitHub"
+                        class="w-full h-full object-contain">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="max-w-5xl w-full border-t border-gray-800/40 pt-4 text-center">
+            <p class="text-[11px] md:text-xs text-gray-500 font-medium tracking-wide">
+                Made by Sarfarosh Alam &copy; 2026. All Rights Reserved.
+            </p>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>
