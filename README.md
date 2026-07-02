@@ -29,7 +29,7 @@ A responsive **Clash of Clans** themed landing page built using **HTML5** and **
 
 ## 📸 Preview
 
-![My local photo](resources/clash-of-clans.jpg)
+![HomePage](resources/clash-of-clans.png)
 
 
 ## 📄 License
