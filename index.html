@@ -13,8 +13,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
+        html,
         body {
             font-family: "Roboto Condensed", sans-serif;
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
         }
 
         a {
@@ -29,6 +32,24 @@
         .menu:has(a:hover) {
             transform: scale(1.02);
             color: gold;
+        }
+
+        .box {
+            animation: fadeup 1s linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+
+        @keyframes fadeup {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
     </style>
 </head>
@@ -110,7 +131,7 @@
 
                 <!-- BUILD YOUR VILLAGE -->
                 <div
-                    class="w-full max-w-[300px] rounded-2xl bg-white shadow-2xl p-8 flex flex-col items-center text-center gap-4 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    class="box w-full max-w-[300px] rounded-2xl bg-white shadow-2xl p-8 flex flex-col items-center text-center gap-4 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <img src="resources/Build-Village.png" alt="Build your Village" class="object-contain"
                         draggable="false" />
                     <h3 class="text-3xl font-bold text-black" style="font-family: 'Impact', 'Arial Black', sans-serif;">
@@ -120,7 +141,7 @@
                 </div>
                 <!-- BATTLE TO WIN -->
                 <div
-                    class="w-full max-w-[300px] rounded-2xl bg-white shadow-2xl p-8 flex flex-col items-center text-center gap-4 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    class="box w-full max-w-[300px] rounded-2xl bg-white shadow-2xl p-8 flex flex-col items-center text-center gap-4 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <img src="resources/Battle.png" alt="Battle" class="object-contain" draggable="false" />
                     <h3 class="text-3xl font-bold text-black" style="font-family: 'Impact', 'Arial Black', sans-serif;">
                         BATTLE</h3>
@@ -129,7 +150,7 @@
                 </div>
                 <!-- JOIN EPIC CLANS -->
                 <div
-                    class="w-full max-w-[300px] rounded-2xl bg-white shadow-2xl p-8 flex flex-col items-center text-center gap-4 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    class="box w-full max-w-[300px] rounded-2xl bg-white shadow-2xl p-8 flex flex-col items-center text-center gap-4 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <img src="resources/Join-Clans.png" alt="Join epic Clans" class="object-contain"
                         draggable="false" />
                     <h3 class="text-3xl font-bold text-black" style="font-family: 'Impact', 'Arial Black', sans-serif;">
@@ -156,7 +177,7 @@
 
                 <!-- Hero 1: BARBARIAN KING -->
                 <div
-                    class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    class="box w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <div class="w-full h-48 bg-amber-50 overflow-hidden">
                         <img src="resources/Barbarian-King.png" alt="Barbarian King Hero"
                             class="w-full h-full object-cover" draggable="false">
@@ -174,7 +195,7 @@
 
                 <!-- Hero 2: ARCHER QUEEN -->
                 <div
-                    class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    class="box w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <div class="w-full h-48 bg-amber-50 overflow-hidden">
                         <img src="resources/Archer-Queen.png" alt="Archer Queen Hero" class="w-full h-full object-cover"
                             draggable="false">
@@ -192,7 +213,7 @@
 
                 <!-- Hero 3: GRAND WARDEN -->
                 <div
-                    class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    class="box w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <div class="w-full h-48 bg-amber-50 overflow-hidden">
                         <img src="resources/Grand-Warden.png" alt="Grand Warden Hero" class="w-full h-full object-cover"
                             draggable="false">
@@ -210,7 +231,7 @@
 
                 <!-- Hero 4: ROYAL CHAMPION -->
                 <div
-                    class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    class="box w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <div class="w-full h-48 bg-amber-50 overflow-hidden">
                         <img src="resources/Royal-Champaion.png" alt="Royal Champion Hero"
                             class="w-full h-full object-cover" draggable="false">
@@ -244,7 +265,7 @@
 
                 <!-- Card 1: BARBARIAN -->
                 <div
-                    class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    class="box w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <div class="w-full h-44 bg-gray-100 overflow-hidden">
                         <img src="resources/Barbarian.png" alt="Barbarian Troop" class="w-full h-full object-cover"
                             draggable="false" />
@@ -262,7 +283,7 @@
 
                 <!-- Card 2: ARCHER -->
                 <div
-                    class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    class="box w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <div class="w-full h-44 bg-gray-100 overflow-hidden">
                         <img src="resources/Archer.png" alt="Archer Troop" class="w-full h-full object-cover"
                             draggable="false" />
@@ -280,7 +301,7 @@
 
                 <!-- Card 3: WIZARD -->
                 <div
-                    class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    class="box w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <div class="w-full h-44 bg-gray-100 overflow-hidden">
                         <img src="resources/Fire-Wizard.png" alt="Wizard Troop" class="w-full h-full object-cover"
                             draggable="false" />
@@ -298,7 +319,7 @@
 
                 <!-- Card 4: DRAGON -->
                 <div
-                    class="w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    class="box w-full max-w-[220px] rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden transition duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <div class="w-full h-44 bg-gray-100 overflow-hidden">
                         <img src="resources/Dragon.png" alt="Dragon Troop" class="w-full h-full object-cover"
                             draggable="false" />
@@ -379,8 +400,7 @@
         <section id="download"
             class="max-w-6xl mx-auto my-16 h-auto md:h-56 bg-gradient-to-r from-[#ffc800] to-[#f39c12] rounded-3xl flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-8 md:py-0 shadow-lg relative">
 
-            <!-- Corrected wrapper div to handle the absolute positioning safely on mobile -->
-            <div class="relative w-full md:w-2/5 flex justify-center md:block h-48 md:h-full">
+            <div class="box relative w-full md:w-2/5 flex justify-center md:block h-48 md:h-full">
                 <img src="resources/Download-King.png" alt="Barbarian King"
                     class="absolute bottom-0 left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 h-56 md:h-64 max-w-none object-contain z-10 drop-shadow-[0_10px_15px_rgba(0,0,0,0.15)]"
                     draggable="false" />
